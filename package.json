@@ -1,31 +1,26 @@
 {
-  "name": "Maybe This",
-  "version": "0.1.0",
+  "name": "33-state-4",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "deploy": "next deploy",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@mdx-js/loader": "^2.1.1",
-    "@next/mdx": "^12.1.6",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "next": "12.1.6",
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
-    "require-context": "^1.1.0"
+    "@mdx-js/loader": "^2.0.0",
+    "@next/mdx": "^12.0.10",
+    "cypress": "^10.3.0",
+    "next": "12.0.10",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@playwright/test": "^1.22.2",
     "@tailwindcss/typography": "^0.5.2",
-    "autoprefixer": "^10.4.7",
-    "eslint": "8.17.0",
-    "eslint-config-next": "12.1.6",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.2"
+    "autoprefixer": "^10.4.2",
+    "eslint": "8.9.0",
+    "eslint-config-next": "12.0.10",
+    "postcss": "^8.4.6",
+    "tailwindcss": "^3.0.22"
   }
 }
