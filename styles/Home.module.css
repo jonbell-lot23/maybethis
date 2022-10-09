@@ -1,11 +1,9 @@
 .container {
   /*  padding: 3rem 2rem;*/
   width: 100%;
-  height: 100vh;
 }
 
 .main {
-  min-height: 100vh;
   padding: 4rem 0;
   width: 100%;
   flex: 1;
@@ -13,6 +11,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.container img {
+  height: 30px;
 }
 
 .blogContainer {

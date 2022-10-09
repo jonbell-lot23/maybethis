@@ -14,7 +14,7 @@ export default function Home() {
       <Header />
       <div className={styles.container}>I did it 2</div>
       {list.map((item) => (
-        <div>{item}</div>
+        <img className="h-12" src={item} alt="images lol" />
       ))}
     </>
   );
