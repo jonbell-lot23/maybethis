@@ -1,22 +1,21 @@
-// next.config.js
-const withMDX = require('@next/mdx')({
-  extension: /\.md?$/,
+const withMDX = require("@next/mdx")({
+  extension: /\.mdx?$/,
   options: {
     remarkPlugins: [],
     rehypePlugins: [],
-    // If you use `MDXProvider`, uncomment the following line.
-    providerImportSource: "@mdx-js/react",
   },
-})
+});
 module.exports = withMDX({
-  // Append the default value with md extensions
-  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
-  async rewrites() {
-    return [
-      {
-        source: '/',
-        destination: '/home/',
-      },
-    ]
+  pageExtensions: ["js", "jsx", "md", "mdx"],
+  images: {
+    domains: ["www.lot23.com"],
   },
-})
+  experimental: {
+    urlImports: [
+      "https://api.motif.land",
+      "https://cdn.skypack.dev",
+      "https://esm.sh",
+      "https://cdn.motif.land",
+    ],
+  },
+});
