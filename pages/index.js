@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className={styles.container}>I did it 2</div>
+      <div className={styles.container}>I did it 7</div>
       {list.map((item) => (
         <img className="h-12" src={item} alt="images lol" />
       ))}
