@@ -1,60 +1,62 @@
-import React,{useState,useEffect} from 'react';
+import { useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import Link from "next/link";
+import { Container, FormControl, Row, Col, Card } from "react-bootstrap";
+import axios from "axios";
+import { useQuery } from "react-query";
 
+const getPokemon = async (key, q) => {
+  const { data } = await axios.get(`/api/search?q=${escape(q)}`);
+  return data.map((pokemon) => ({
+    ...pokemon,
+    image: `/pokemon/${pokemon.name.english
+      .toLowerCase()
+      .replace(" ", "-")}.jpg`,
+  }));
+};
 
-export function Yes() {
-  return (<div className="p-12 text-white bg-pink-500">You did a thing!</div>)
-}
-
-export function No() {
-  return (<div className="p-12 text-blue-500 bg-gray-100">You have time!</div>)
-}
-
-export default function Home() {
-  let streakArray = 
-  [
-    "7-9-2022",
-    "7-10-2022",
-    "7-11-2022",
-    "7-12-2022",
-    "7-13-2022"
-  ];
-
-  /*
-  7-9: Comic page
-  7-10: This app, comic page, goose egg log, tinker bell
-  7-11: Comic page, painting
-  7-12: Ghostchips chat, painting
-  7-13: Comic about games, also game maker
-  */
-
-  let currentTime = new Date();
-  let month = 1+currentTime.getMonth();
-  let day = currentTime.getDate();
-  let year = currentTime.getFullYear();
-
-  let dateString = month+"-"+day+"-"+year;
-  // console.log(dateString);
-
-  const lastItem = streakArray[streakArray.length - 1];
-  // console.log(lastItem);
-
-  
+const Home = () => {
+  const [query, setQuery] = useState("");
+  const { data } = useQuery(["q", query], getPokemon);
 
   return (
-
-    <div className={styles.container}>
+    <div className="container">
       <Head>
-        <title>Do the thing</title>
+        <title>Pokemon!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={styles.main}>
-        {dateString == lastItem ? <Yes /> : <No />}
-      </div>
-
+      <Container>
+        <FormControl
+          placeholder="Search"
+          aria-label="Search"
+          value={query}
+          onChange={(evt) => setQuery(evt.target.value)}
+        />
+        {data && (
+          <Row>
+            {data.map(({ id, name, type, image }) => (
+              <Col xs={4} key={id} style={{ padding: 5 }}>
+                <Link href={`/pokemon/${name.english}`}>
+                  <Card>
+                    <Card.Img
+                      variant="top"
+                      src={image}
+                      style={{ maxHeight: 300 }}
+                    />
+                    <Card.Body>
+                      <Card.Title>{name.english}</Card.Title>
+                      <Card.Subtitle>{type.join(", ")}</Card.Subtitle>
+                    </Card.Body>
+                  </Card>
+                </Link>
+              </Col>
+            ))}
+          </Row>
+        )}
+      </Container>
     </div>
   );
-}
+};
+
+export default Home;
