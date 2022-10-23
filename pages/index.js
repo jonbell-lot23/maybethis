@@ -134,7 +134,7 @@ export default function Home() {
             An Album by Enthusiastic Panther
           </h2>
 
-          <ol class="list-decimal mt-8 ml-8">
+          <ol className="list-decimal mt-8 ml-8">
             <li> GrabASeat </li>
             <li> PoolGlare </li>
             <li> F12 </li>
