@@ -11,7 +11,6 @@ import ARitualBetweenLightAndDark from "./songs/ARitualBetweenLightAndDark.mdx";
 import Viewridge from "./songs/Viewridge.mdx";
 import IfRobotsHadLungs from "./songs/IfRobotsHadLungs.mdx";
 import Escalation from "./songs/Escalation.mdx";
-import PatrickSwayze from "./songs/PatrickSwayze.mdx";
 import SwaggeringTowardsTheThreat from "./songs/SwaggeringTowardsTheThreat.mdx";
 import WhatPeopleAreSaying from "./songs/WhatPeopleAreSaying.mdx";
 import DestroyedAndroid from "./songs/DestroyedAndroid.mdx";
@@ -21,6 +20,11 @@ import DroppingDownIntoTheSky from "./songs/DroppingDownIntoTheSky.mdx";
 import MaybeThis from "./songs/MaybeThis.mdx";
 import TakeTheTunnel from "./songs/TakeTheTunnel.mdx";
 import InterruptSwitch from "./songs/InterruptSwitch.mdx";
+
+
+import Hum from "./songs/Hum.mdx";
+import BigFight from "./songs/BigFight.mdx";
+import Plodding from "./songs/Plodding.mdx";
 
 export default function Home() {
   const songs = [
@@ -133,20 +137,26 @@ export default function Home() {
           <ol class="list-decimal mt-8 ml-8">
             <li> GrabASeat </li>
             <li> PoolGlare </li>
+            <li> F12 </li>
+            <li> InterruptSwitch </li>
+            
             <li> SomethingsUp </li>
-            <li> KeysToTheArmory </li>
             <li> SwaggeringTowardsTheThreat</li>
             <li> BecauseItWasHard </li>
-            <li> Escalation </li>
+            <li> KeysToTheArmory </li>
             <li>Viewridge </li>
-            <li>ARitualBetweenLightAndDark </li>
             <li>IfRobotsHadLungs </li>
-            <li> InterruptSwitch </li>
-            <li> PatrickSwayze </li>
+            
+            
+            <li>ARitualBetweenLightAndDark </li>
+            <li> Escalation </li>          
+            <li> Big Fight </li>
             <li>DestroyedAndroid </li>
             <li> WhatPeopleAreSaying </li>
-            <li> TakeTheTunnel </li>
-            <li> F12 </li>
+            
+            <li> Hum </li>
+            
+            <li> TakeTheTunnel </li>            
             <li> DroppingDownIntoTheSky </li>
             <li> MaybeThis </li>
           </ol>
@@ -154,33 +164,33 @@ export default function Home() {
 
         <GrabASeat />
         <PoolGlare />
-        <SomethingsUp />
-        <KeysToTheArmory />
-        <SwaggeringTowardsTheThreat />
-        <BecauseItWasHard />
-        <Escalation />
-        <Viewridge />
-        <ARitualBetweenLightAndDark />
-        <IfRobotsHadLungs />
-        <InterruptSwitch />
-        <PatrickSwayze />
-        <DestroyedAndroid />
-        <WhatPeopleAreSaying />
-        <TakeTheTunnel />
         <F12 />
+        <InterruptSwitch />
+        
+        <SomethingsUp />
+        <SwaggeringTowardsTheThreat />
+        <BecauseItWasHard />        
+        <KeysToTheArmory />
+        <Viewridge />
+        <IfRobotsHadLungs />
+        
+        <Plodding />
+        <ARitualBetweenLightAndDark />
+        <Escalation />
+        <BigFight />
+        
+        
+        
+        <DestroyedAndroid />
+        
+        <WhatPeopleAreSaying />
+        <Hum />
+        <TakeTheTunnel />
+        
         <DroppingDownIntoTheSky />
         <MaybeThis />
 
-        <div className="w-full flex flex-wrap mt-8">
-          {songs.map((i) => (
-            <Songs.Song
-              id={i.id}
-              text={i.text}
-              listOfMedia={i.listOfMedia}
-              songURL={i.songURL}
-            />
-          ))}
-        </div>
+        
       </>
 
       <div></div>
