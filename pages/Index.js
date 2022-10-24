@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import * as Songs from "./components/Songs.js";
+import * as Songs from "../components/Songs.js";
 import GrabASeat from "./songs/GrabASeat.mdx";
 import PoolGlare from "./songs/PoolGlare.mdx";
 import SomethingsUp from "./songs/SomethingsUp.mdx";
