@@ -167,11 +167,11 @@ export default function Home() {
         <F12 />
         <InterruptSwitch />
         
-        <SomethingsUp />
+        <SomethingsUp /> 
+        <Viewridge />
         <SwaggeringTowardsTheThreat />
         <BecauseItWasHard />        
         <KeysToTheArmory />
-        <Viewridge />
         <IfRobotsHadLungs />
         
         <Plodding />
