@@ -21,7 +21,6 @@ import MaybeThis from "../components/songs/MaybeThis.mdx";
 import TakeTheTunnel from "../components/songs/TakeTheTunnel.mdx";
 import InterruptSwitch from "../components/songs/InterruptSwitch.mdx";
 
-
 import Hum from "../components/songs/Hum.mdx";
 import BigFight from "../components/songs/BigFight.mdx";
 import Plodding from "../components/songs/Plodding.mdx";
@@ -128,35 +127,34 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
-        <div className="h-1/2 w-full rounded-xl py-8 m-5 text-black">
+        <div className="w-full py-8 m-5 text-black h-1/2 rounded-xl">
           <h1 className="text-3xl font-bold">Maybe This</h1>
-          <h2 className="text-1xl font-medium text-blue-500">
-            An Album by Enthusiastic Panther
+          <h2 className="font-medium text-blue-500 text-1xl">
+            An Album by CLA-5
           </h2>
 
-          <ol className="list-decimal mt-8 ml-8">
+          <ol className="mt-8 ml-8 list-decimal">
             <li> GrabASeat </li>
             <li> PoolGlare </li>
             <li> F12 </li>
             <li> InterruptSwitch </li>
-            
+
             <li> SomethingsUp </li>
             <li> SwaggeringTowardsTheThreat</li>
             <li> BecauseItWasHard </li>
             <li> KeysToTheArmory </li>
             <li>Viewridge </li>
             <li>IfRobotsHadLungs </li>
-            
-            
+
             <li>ARitualBetweenLightAndDark </li>
-            <li> Escalation </li>          
+            <li> Escalation </li>
             <li> Big Fight </li>
             <li>DestroyedAndroid </li>
             <li> WhatPeopleAreSaying </li>
-            
+
             <li> Hum </li>
-            
-            <li> TakeTheTunnel </li>            
+
+            <li> TakeTheTunnel </li>
             <li> DroppingDownIntoTheSky </li>
             <li> MaybeThis </li>
           </ol>
@@ -166,31 +164,27 @@ export default function Home() {
         <PoolGlare />
         <F12 />
         <InterruptSwitch />
-        
-        <SomethingsUp /> 
+
+        <SomethingsUp />
         <Viewridge />
         <SwaggeringTowardsTheThreat />
-        <BecauseItWasHard />        
+        <BecauseItWasHard />
         <KeysToTheArmory />
         <IfRobotsHadLungs />
-        
+
         <Plodding />
         <ARitualBetweenLightAndDark />
         <Escalation />
         <BigFight />
-        
-        
-        
+
         <DestroyedAndroid />
-        
+
         <WhatPeopleAreSaying />
         <Hum />
         <TakeTheTunnel />
-        
+
         <DroppingDownIntoTheSky />
         <MaybeThis />
-
-        
       </>
 
       <div></div>
