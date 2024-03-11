@@ -133,7 +133,7 @@ export default function Home() {
             An Album by CLA-5
           </h2>
 
-          <ol className="mt-8 ml-8 list-decimal">
+          <ol className="hidden mt-8 ml-8 list-decimal">
             <li> GrabASeat </li>
             <li> PoolGlare </li>
             <li> F12 </li>
@@ -160,31 +160,11 @@ export default function Home() {
           </ol>
         </div>
 
-        <GrabASeat />
-        <PoolGlare />
-        <F12 />
-        <InterruptSwitch />
-
-        <SomethingsUp />
-        <Viewridge />
-        <SwaggeringTowardsTheThreat />
-        <BecauseItWasHard />
-        <KeysToTheArmory />
-        <IfRobotsHadLungs />
-
-        <Plodding />
-        <ARitualBetweenLightAndDark />
-        <Escalation />
-        <BigFight />
-
-        <DestroyedAndroid />
-
-        <WhatPeopleAreSaying />
-        <Hum />
-        <TakeTheTunnel />
-
-        <DroppingDownIntoTheSky />
-        <MaybeThis />
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "5px" }}>
+          {[...Array(17)].map((_, i) => (
+            <img key={i} src={`/${i + 1}.png`} style={{ width: "250px" }} />
+          ))}
+        </div>
       </>
 
       <div></div>
