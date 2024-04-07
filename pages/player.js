@@ -112,19 +112,19 @@ export default function Home() {
       id: 18,
       text: "Working On It",
       songURL: "/mp3s/18-Working_On_It.m4a",
-      imageURL: "/17.png",
+      imageURL: "/18.png",
     },
     {
       id: 19,
       text: "Old Is Now Again",
       songURL: "/mp3s/19-Old_Is_Now_Again.m4a",
-      imageURL: "/17.png",
+      imageURL: "/19.png",
     },
     {
       id: 20,
       text: "Maybe This fet",
       songURL: "/mp3s/20-Maybe_This_fet.m4a",
-      imageURL: "/17.png",
+      imageURL: "/20.png",
     },
   ];
 
