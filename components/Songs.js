@@ -1,7 +1,7 @@
 import React from "react";
 
 function Default(props) {
-  return;
+  return null;
 }
 
 export function Song(props) {
