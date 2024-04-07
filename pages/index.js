@@ -1,29 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import * as Songs from "../components/Songs.js";
-import GrabASeat from "../components/songs/GrabASeat.mdx";
-import PoolGlare from "../components/songs/PoolGlare.mdx";
-import SomethingsUp from "../components/songs/SomethingsUp.mdx";
-import KeysToTheArmory from "../components/songs/KeysToTheArmory.mdx";
-import ARitualBetweenLightAndDark from "../components/songs/ARitualBetweenLightAndDark.mdx";
-import Viewridge from "../components/songs/Viewridge.mdx";
-import IfRobotsHadLungs from "../components/songs/IfRobotsHadLungs.mdx";
-import Escalation from "../components/songs/Escalation.mdx";
-import SwaggeringTowardsTheThreat from "../components/songs/SwaggeringTowardsTheThreat.mdx";
-import WhatPeopleAreSaying from "../components/songs/WhatPeopleAreSaying.mdx";
-import DestroyedAndroid from "../components/songs/DestroyedAndroid.mdx";
-import BecauseItWasHard from "../components/songs/BecauseItWasHard.mdx";
-import F12 from "../components/songs/F12.mdx";
-import DroppingDownIntoTheSky from "../components/songs/DroppingDownIntoTheSky.mdx";
-import MaybeThis from "../components/songs/MaybeThis.mdx";
-import TakeTheTunnel from "../components/songs/TakeTheTunnel.mdx";
-import InterruptSwitch from "../components/songs/InterruptSwitch.mdx";
-
-import Hum from "../components/songs/Hum.mdx";
-import BigFight from "../components/songs/BigFight.mdx";
-import Plodding from "../components/songs/Plodding.mdx";
 
 export default function Home() {
   const songs = [
